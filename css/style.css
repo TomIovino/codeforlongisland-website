@@ -125,7 +125,7 @@ a:visited{
 
 #index{
   padding-top:var(--header-height);
-  background:url("/img/li.png");
+  background:url("../img/li.png");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -143,8 +143,8 @@ a:visited{
 
 #index p{
   font-size:1.2rem;
-  width:25rem;
-  margin: 0 auto;
+  max-width:25rem;
+  margin:0 auto;
   color:#ffffff;
 }
 
@@ -214,9 +214,6 @@ footer{
 }
 
 @media (max-width: 58rem){ 
-  /* enable hamburger button,
-     hide nav ul  */
-
   #primary-nav{
     background-color: #ffffff;
   }
@@ -236,7 +233,6 @@ footer{
 
     flex-direction:column;
     padding:2rem;
-    /* padding:min(30vh,10rem) 2em; */
 
     background:#FFFFFF;
 
