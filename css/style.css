@@ -284,7 +284,7 @@ footer{
     background:#FFFFFF;
 
     transform:translateX(100%);
-    transition: transform 300ms ease-out;
+    transition: transform 600ms ease-out;
   }
   
   .primary-nav[data-visible="true"]{
@@ -295,13 +295,13 @@ footer{
     display:block;
     position:absolute;
     z-index:9999;
-    /* background-color: transparent; */
+    background-color: transparent;
     background-image:url("../img/menu.svg");
     background-repeat:no-repeat;
-    width:3rem;
+    width:2rem;
     aspect-ratio:1;
     border:0;
-    top:.5rem;
+    top:1.3rem;
     right:1rem;
   }
 
