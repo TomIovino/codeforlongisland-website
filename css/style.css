@@ -146,7 +146,7 @@ a:hover{
 
 #index{
   padding-top:var(--header-height);
-  background:url("../img/li.png");
+  background:url("../img/li.webp");
   background-size:cover;
   background-position:center;
   background-repeat:no-repeat;
@@ -186,6 +186,36 @@ a:hover{
   display:flex;
   flex-direction:column;
   gap:5rem;
+}
+
+/* code of conduct page main */
+
+#conduct{
+  padding-top:var(--header-height);
+  min-width:18.75rem;
+  max-width:59rem;
+  margin:0 auto;
+  font-family:var(--font2);
+  font-size:calc(.5rem + 1vw);
+  font-weight:300;
+  background-color:white;
+}
+
+.conduct-content{
+  padding: 2rem;
+}
+
+#conduct ol{
+  /* list-style: inherit; */
+  padding-left:2rem;
+}
+
+#conduct-body{
+  background-color:var(--fontcolor1);
+}
+
+#conduct p{
+  padding: 1rem 0;
 }
 
 /* footer */
