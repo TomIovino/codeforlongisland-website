@@ -196,9 +196,17 @@ a:hover{
   max-width:59rem;
   margin:0 auto;
   font-family:var(--font2);
-  font-size:calc(.5rem + 1vw);
-  font-weight:300;
+  font-size:calc(.5rem + .5vw);
+  font-weight:400;
   background-color:white;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+#conduct a{
+  background-color:var(--main1);
+  border-radius:5px;
+  padding: 0 5px;
 }
 
 .conduct-content{
@@ -206,7 +214,6 @@ a:hover{
 }
 
 #conduct ol{
-  /* list-style: inherit; */
   padding-left:2rem;
 }
 
@@ -216,6 +223,12 @@ a:hover{
 
 #conduct p{
   padding: 1rem 0;
+}
+
+#anti-harassment{
+  font-size:calc(1rem + .75vw);
+  padding:1rem 0;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* footer */
