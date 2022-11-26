@@ -1,3 +1,5 @@
+/* Tom Iovino - nof1983@gmail.com */
+
 /* Box Model Hack */
 
 *{
@@ -7,9 +9,9 @@
 /* root */
 
 :root{
-  --main2: #007ECB; /* header & footer top border line */
   --main1: #131318;
-  --footerbg: #2D2D2D; /* footer bg color */
+  --main2: #007ECB;
+  --footerbg: #2D2D2D;
   --fontcolor1: #e2e2e2;
 
   --font1: 'Roboto', sans-serif, arial;
@@ -45,6 +47,11 @@
   visibility:hidden;
 }
 
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(1deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(78,114,255,1) 100%);
+}
+
 /* anchor */
 
 a{
@@ -57,6 +64,10 @@ a:link, a:visited{
 
 a:hover{
   color:rgb(178, 178, 178) !important;
+}
+
+.text-link{
+  color:rgb(0, 0, 255) !important;
 }
 
 /* buttons */
@@ -131,6 +142,10 @@ a:hover{
   width:9rem;
 } 
 
+#c4li-icon:hover{
+  color:#e2e2e2 !important;
+}
+
 #primary-nav{
   gap:1.2rem; 
   font-size:var(--nav-font-size);
@@ -151,9 +166,13 @@ a:hover{
   background-position:center;
   background-repeat:no-repeat;
   background-blend-mode:multiply;
-  background-color:#777;
+  background-color:#555;
   text-align:center;
   min-height:75vh;
+}
+
+#index-body{
+  background-color:var(--footerbg);
 }
 
 #index h1{
@@ -172,6 +191,7 @@ a:hover{
   max-width:30rem;
   margin:0 auto;
   color:var(--fontcolor1);
+  line-height:25px;
   text-shadow: 1px 1px 2px black;
 }
 
@@ -188,7 +208,7 @@ a:hover{
   gap:5rem;
 }
 
-/* code of conduct page main */
+/* code of conduct main */
 
 #conduct{
   padding-top:var(--header-height);
@@ -196,29 +216,19 @@ a:hover{
   max-width:59rem;
   margin:0 auto;
   font-family:var(--font2);
-  font-size:calc(.5rem + .5vw);
+  font-size:calc(.8rem + .5vw);
   font-weight:400;
-  background-color:white;
+  background-color:#ffffff;
   letter-spacing: 1px;
-  line-height: 20px;
-}
-
-#conduct a{
-  background-color:var(--main1);
-  border-radius:5px;
-  padding: 0 5px;
+  line-height: 30px;
 }
 
 .conduct-content{
-  padding: 2rem;
+  padding: 3rem;
 }
 
 #conduct ol{
   padding-left:2rem;
-}
-
-#conduct-body{
-  background-color:var(--fontcolor1);
 }
 
 #conduct p{
@@ -226,9 +236,141 @@ a:hover{
 }
 
 #anti-harassment{
-  font-size:calc(1rem + .75vw);
+  font-size:calc(1.1rem + .75vw);
   padding:1rem 0;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px #000000;
+}
+
+/* projects main */
+
+#projects{
+  padding-top:var(--header-height);
+  min-width:18.75rem;
+  max-width:59rem;
+  margin:0 auto;
+  font-family:var(--font2);
+  font-size:calc(.8rem + .5vw);
+  font-weight:400;
+  background-color:#ffffff;
+  letter-spacing: 1px;
+  line-height: 30px;
+  min-height:75vh;
+}
+
+.projects-content{
+  padding: 3rem;
+}
+
+/* about main */
+
+#about{
+  padding-top:var(--header-height);
+  min-width:18.75rem;
+  max-width:59rem;
+  margin:0 auto;
+  font-family:var(--font2);
+  font-size:calc(.8rem + .5vw);
+  font-weight:400;
+  background-color:#ffffff;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.about-content{
+  padding: 3rem;
+}
+
+.about-content .embed-item{
+  margin: 0 auto;
+  width:100%;
+  aspect-ratio: 16/9;
+}
+
+#content-heading{
+  font-size:calc(1.1rem + .75vw);
+  color:#000000;
+  padding:1rem 0;
+  text-shadow: .5px .5px 2px #000000;
+  border-bottom: 1.5px solid var(--main1);
+}
+
+#about p{
+  padding: 1rem 0;
+}
+
+.events-wrapper img{
+  width:calc(5rem + 3vw);
+}
+
+.events-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.events-wrapper > *{
+  display:flex;
+  flex-direction: column;
+  text-align:center; 
+  align-items:center;
+  flex: 0 1 50%;
+  padding:2rem;
+}
+
+.events-wrapper > section > p{
+  height:10rem;
+}
+
+.team-wrapper{
+  padding:2rem 0;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.team-wrapper > *{
+  display:flex;
+  flex-direction: row;
+  gap:2rem;
+  padding-bottom:5rem;
+}
+
+.team-wrapper > *:last-child{
+  padding-bottom:0;
+}
+
+.team-wrapper > section > div{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+}
+
+.team-wrapper p {
+  text-indent:3rem;
+} 
+
+.team-member{
+  display:flex;
+  justify-content: space-between;
+  padding-bottom:1rem;
+}
+
+.team-member-socials{
+  display:flex;
+  font-size:3rem;
+  gap:5px;
+}
+
+.team-member-socials a{
+  color:#000000;
+}
+
+.team-member-name{
+  font-weight:600;
+  font-size:2rem;
+}
+
+.team-member-title{
+  font-weight:400;
+  font-size:1.6rem;
 }
 
 /* footer */
@@ -273,12 +415,18 @@ footer{
 /* media queries */
 
 @media (max-width: 33rem){
+
+/* header 'code for long island' text */
+
   #org-title{
     display:none;
   }
 }
 
 @media (max-width: 45rem){
+
+/* footer */
+
   .footer-container{
     flex-direction:column;
     align-items: flex-start;
@@ -290,6 +438,10 @@ footer{
     margin-top:2rem;
   }
 
+/* end footer */
+
+/* main page */
+
   #index{
     background-size:contain;
     background-position:top;
@@ -300,9 +452,32 @@ footer{
   #index h1, #index p{
     color:#000000;
   }
+
+/* end main page */
+
+/* about page */
+
+  .team-wrapper > section{
+    flex-direction:column;
+  }
+
+  .team-wrapper img{
+    width:50%;
+  }
+  
+  .team-member{
+    flex-direction:column;
+    gap:1rem;
+  }
+
+/* end about page */
+
 }
 
 @media (max-width: 58rem){ 
+
+/* header navigation */
+
   #primary-nav a:link, #primary-nav a:visited{
     color:#5c5c5c;
   }
@@ -352,7 +527,24 @@ footer{
     background-image:url("../img/close.svg");
   }
 
+/* end header navigation */
+
+/* main page */
+
   #main-links{
     flex-direction:column;
   }
+
+/* end main page */
+
+/* about page */
+
+  .events-wrapper{
+    flex-direction:column;
+    flex:1 0 50%;
+    flex-wrap:wrap;
+  }
+
+/* end about page */
+
 }
